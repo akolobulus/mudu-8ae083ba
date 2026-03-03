@@ -36,10 +36,9 @@ const HowItWorksSection = () => {
   return (
     <section className="py-16 md:py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-6" data-aos="fade-up">
           <div className="max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-bold font-serif text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               How Does It Work?
             </h2>
             <p className="text-muted-foreground leading-relaxed">
@@ -51,17 +50,18 @@ const HowItWorksSection = () => {
           </Button>
         </div>
 
-        {/* Step cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
             <div
               key={index}
               className="bg-card border border-border rounded-2xl p-6 hover:shadow-md transition-shadow"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <div className={`w-12 h-12 ${step.bgColor} rounded-xl flex items-center justify-center mb-5`}>
                 <step.icon className={`w-6 h-6 ${step.iconColor}`} />
               </div>
-              <h3 className="text-lg font-semibold font-sans text-foreground mb-2">{step.title}</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{step.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
             </div>
           ))}
