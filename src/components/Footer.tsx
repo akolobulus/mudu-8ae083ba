@@ -12,10 +12,10 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <MessageCircle className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold font-sans text-foreground">AwaDoc</span>
+              <span className="text-xl font-bold font-sans text-foreground">Mudu</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Simplifying access to immediate healthcare delivery using AI on WhatsApp.
+              Smart shopping for u — simplifying access to real-time market prices using AI on WhatsApp.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors"><Facebook className="w-4 h-4" /></a>
@@ -31,8 +31,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Solutions</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Virtual Triage</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Patient services</a></li>
+              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Price Checker</a></li>
+              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Market Intelligence</a></li>
             </ul>
           </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact us</a></li>
               <li>
                 <p className="text-sm font-semibold text-foreground">E-mail:</p>
-                <a href="mailto:help@awadoc.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">help@awadoc.com</a>
+                <a href="mailto:help@mudu.ng" className="text-sm text-muted-foreground hover:text-foreground transition-colors">help@mudu.ng</a>
               </li>
               <li>
                 <p className="text-sm font-semibold text-foreground">Address:</p>
@@ -80,7 +80,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-sm text-muted-foreground">©2026 awadoc. All Rights Reserved.</p>
+          <p className="text-sm text-muted-foreground">©2026 Mudu. All Rights Reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</a>

@@ -2,40 +2,40 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Adaeze Okonkwo",
-    city: "Lagos, Nigeria",
-    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&crop=face",
-    text: "AwaDoc has been a lifesaver! I was able to get health guidance at 2am when my child had a fever. The AI provided clear steps and connected me to a nearby pharmacy.",
-  },
-  {
-    name: "Chidi Nnamdi",
+    name: "Chinedu M.",
     city: "Abuja, Nigeria",
     avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face",
-    text: "As someone in a rural area, accessing healthcare used to be a journey. AwaDoc brings the doctor to my phone. The WhatsApp interface makes it so easy to use.",
+    text: "Before using Mudu, I was confused about market prices. I often received conflicting info. With Mudu's guidance, I finally understood how to manage my food budget properly.",
   },
   {
-    name: "Funke Adeyemi",
+    name: "Aisha O.",
+    city: "Lagos, Nigeria",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&crop=face",
+    text: "This service was a game-changer for my business. I was experiencing high food costs and wasn't sure what to buy. The advice I received was quick and accurate.",
+  },
+  {
+    name: "Tolu A.",
     city: "Ibadan, Nigeria",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
-    text: "I love how AwaDoc explains things in simple terms. It helped me understand my symptoms and gave me peace of mind before my doctor's appointment.",
+    text: "I used to rely on random online searches for market info, but it led to confusion. Now, with Mudu, I get reliable, expert-backed advice instantly.",
   },
   {
-    name: "Emeka Obi",
+    name: "Emeka O.",
     city: "Port Harcourt, Nigeria",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
-    text: "The speed of response is incredible. Within minutes I had a comprehensive breakdown of what my symptoms could mean and recommended next steps.",
+    text: "Mudu helped me find the best prices for bulk rice. I saved over 30% on my monthly shopping. The WhatsApp interface makes it incredibly easy to use.",
   },
   {
-    name: "Amina Ibrahim",
+    name: "Amina B.",
     city: "Kano, Nigeria",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
-    text: "AwaDoc connected me with a specialist when the AI detected my symptoms needed professional attention. The seamless referral system is amazing.",
+    text: "As a small trader, Mudu connected me with wholesalers I never knew existed. My profit margins have improved significantly since I started using it.",
   },
   {
-    name: "Tunde Bakare",
+    name: "Kunle D.",
     city: "Enugu, Nigeria",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
-    text: "I recommend AwaDoc to all my friends and family. It's like having a knowledgeable health companion available 24/7 right in your pocket.",
+    text: "I recommend Mudu to every family I know. It's like having a market expert in your pocket—available 24/7, rain or shine.",
   },
 ];
 

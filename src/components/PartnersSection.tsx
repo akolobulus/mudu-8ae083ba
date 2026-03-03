@@ -1,52 +1,47 @@
-import { Check, Heart, TrendingUp, Users } from "lucide-react";
+import { Check, ShoppingBag, TrendingUp, Users } from "lucide-react";
 
 const partnerTypes = [
-  "Health System",
-  "Health Plan & Payers",
-  "Hospitals",
-  "Retail Pharmacies",
-  "Medical Groups",
-  "Digital Health Companies",
+  { label: "Household Shoppers", desc: "Reducing daily food costs for families" },
+  { label: "Market Unions & Traders", desc: "Increasing digital visibility and sales for stall owners" },
+  { label: "FMCG & Retailers", desc: "Providing street-level data for supply chains" },
+  { label: "Agro-Logistics", desc: "Streamlining the movement of food from farm to market" },
 ];
 
 const benefits = [
   {
     icon: Users,
-    title: "Improve Patient Access and Engagement",
+    title: "Improve Buyer Access",
     borderColor: "border-t-primary",
     iconBg: "bg-primary/10",
     iconColor: "text-primary",
     points: [
-      "24/7 AI-powered patient support via WhatsApp",
-      "Multilingual health communication",
-      "Reduced wait times and improved satisfaction",
-      "Seamless appointment scheduling",
+      "Self-service price checks and digital triage via WhatsApp and SMS",
+      "24/7 market support available without the need for human agents",
+      "Accurate and easy location-based stall searching",
     ],
   },
   {
-    icon: Heart,
-    title: "Optimize Capacity Management",
+    icon: ShoppingBag,
+    title: "Optimize Market Capacity",
     borderColor: "border-t-awadoc-pink",
     iconBg: "bg-awadoc-pink/10",
     iconColor: "text-awadoc-pink",
     points: [
-      "Smart patient triage and routing",
-      "Automated follow-up reminders",
-      "Efficient resource allocation",
-      "Real-time capacity monitoring",
+      "Deflect crowded market trips with self-service AI assistants",
+      "Ensure buyers find the right stall types when searching online",
+      "Improve trader resource utilization by routing buyers to the right stalls",
     ],
   },
   {
     icon: TrendingUp,
-    title: "Enhance Patient Flow and Increase Revenue",
+    title: "Enhance National Revenue",
     borderColor: "border-t-awadoc-yellow",
     iconBg: "bg-awadoc-yellow/10",
     iconColor: "text-awadoc-yellow",
     points: [
-      "Streamlined patient intake process",
-      "Reduced no-show rates",
-      "Increased patient retention",
-      "Data-driven operational insights",
+      "Route buyers to virtual or physical stalls to increase trader turnover",
+      "Fill open supply gaps with high-demand food items based on real-time data",
+      "Gain valuable analytics to drive national food supply strategy",
     ],
   },
 ];
@@ -64,7 +59,7 @@ const PartnersSection = () => {
           {partnerTypes.map((type, index) => (
             <div key={index} className="flex items-center gap-2">
               <div className="w-2.5 h-2.5 rounded-full bg-primary" />
-              <span className="text-sm font-medium text-foreground">{type}</span>
+              <span className="text-sm font-medium text-foreground">{type.label}</span>
             </div>
           ))}
         </div>

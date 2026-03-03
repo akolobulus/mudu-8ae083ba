@@ -24,13 +24,13 @@ const CTAFooter = () => {
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-primary-foreground leading-tight mb-6">
-          Accessing healthcare shouldn't be hard. Together, we can make it easy
+          Accessing fair food prices shouldn't be hard. Together, we can make it easy
         </h2>
         <p className="text-primary-foreground/80 mb-8 text-base md:text-lg leading-relaxed">
-          Get AI-powered healthcare insights delivered through WhatsApp. Join millions of Africans accessing quality health guidance anytime, anywhere.
+          Don't wait for answers—get instant, AI-powered insights and connect with verified traders.
         </p>
         <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-semibold">
-          Talk to Awadoc now
+          Talk to Mudu now
         </Button>
       </div>
     </section>
