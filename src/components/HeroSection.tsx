@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FileText, Waves } from "lucide-react";
+import { ShoppingCart, BarChart3 } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -8,34 +8,34 @@ const HeroSection = () => {
         {/* Decorative elements */}
         <div className="absolute left-4 md:left-12 top-0 md:top-8">
           <div className="w-16 h-20 md:w-20 md:h-24 bg-awadoc-yellow/20 rounded-xl flex items-center justify-center rotate-[-12deg]">
-            <FileText className="w-8 h-8 md:w-10 md:h-10 text-awadoc-yellow" />
+            <ShoppingCart className="w-8 h-8 md:w-10 md:h-10 text-awadoc-yellow" />
           </div>
           <div className="mt-4 bg-background shadow-lg rounded-full px-3 py-1.5 text-xs font-medium inline-flex items-center gap-1.5 border border-border">
-            <div className="w-5 h-5 rounded-full bg-awadoc-pink/20 flex items-center justify-center text-[10px]">👩</div>
-            Anna
+            <div className="w-5 h-5 rounded-full bg-awadoc-pink/20 flex items-center justify-center text-[10px]">🛒</div>
+            Buyer
           </div>
         </div>
 
         <div className="absolute right-4 md:right-12 top-4 md:top-12">
           <div className="w-16 h-20 md:w-20 md:h-24 bg-awadoc-blue/20 rounded-xl flex items-center justify-center rotate-[12deg]">
-            <Waves className="w-8 h-8 md:w-10 md:h-10 text-awadoc-blue" />
+            <BarChart3 className="w-8 h-8 md:w-10 md:h-10 text-awadoc-blue" />
           </div>
           <div className="mt-4 bg-background shadow-lg rounded-full px-3 py-1.5 text-xs font-medium inline-flex items-center gap-1.5 border border-border">
-            <div className="w-5 h-5 rounded-full bg-awadoc-blue/20 flex items-center justify-center text-[10px]">👩‍⚕️</div>
-            Elena
+            <div className="w-5 h-5 rounded-full bg-awadoc-blue/20 flex items-center justify-center text-[10px]">📊</div>
+            Trader
           </div>
         </div>
 
         {/* Main content */}
         <div className="max-w-3xl mx-auto px-8 md:px-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-foreground leading-tight mb-6">
-            Instant Healthcare via WhatsApp, Powered by AI.
+            Instant Market Prices via WhatsApp, Powered by AI.
           </h1>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            We improve patient access and engagement using AI-powered solutions delivered through WhatsApp, making healthcare accessible to everyone, everywhere.
+            Stop buying blind. Get real-time prices from major markets across Nigeria directly on your WhatsApp.
           </p>
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25">
-            Talk to Awadoc now
+            Talk to Mudu now
           </Button>
         </div>
 
@@ -57,7 +57,7 @@ const HeroSection = () => {
             ))}
           </div>
           <p className="text-sm text-muted-foreground">
-            To serve over <span className="font-semibold text-foreground">1.5 billion</span> Africans
+            Helping <span className="font-semibold text-foreground">1.5 billion</span> Africans buy smarter
           </p>
         </div>
       </div>

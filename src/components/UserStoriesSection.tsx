@@ -3,22 +3,22 @@ const stories = [
     image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&crop=face",
     bgColor: "bg-awadoc-yellow/20",
     bubbles: [
-      { text: "Analyze your symptoms", position: "top-2 -right-4" },
-      { text: "Thank you for coming through", position: "bottom-4 -left-4" },
+      { text: "Check today's prices", position: "top-2 -right-4" },
+      { text: "Thanks, saved me money!", position: "bottom-4 -left-4" },
     ],
   },
   {
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
     bgColor: "bg-awadoc-blue/20",
     bubbles: [
-      { text: "I feel better now", position: "top-4 -left-4" },
+      { text: "Smart shopping for u", position: "top-4 -left-4" },
     ],
   },
   {
     image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
     bgColor: "bg-awadoc-purple/20",
     bubbles: [
-      { text: "Understand your health", position: "top-2 -right-4" },
+      { text: "Find the best deals", position: "top-2 -right-4" },
     ],
   },
 ];
