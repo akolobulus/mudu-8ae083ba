@@ -51,9 +51,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Security</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a></li>
+              <li><a href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a></li>
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Support</a></li>
+              <li><a href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Support</a></li>
             </ul>
           </div>
 
@@ -70,9 +70,6 @@ const Footer = () => {
                 <p className="text-sm font-semibold text-foreground">Address:</p>
                 <p className="text-sm text-muted-foreground">No 6, Freetown Road, Apapa, Lagos - Nigeria.</p>
               </li>
-              <li>
-                <p className="text-sm text-muted-foreground">8 The Green. Ste A. Dover, Delaware 19901 - USA.</p>
-              </li>
             </ul>
           </div>
         </div>
@@ -83,9 +80,9 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">©2026 Mudu. All Rights Reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
+            <a href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Support</a>
+            <a href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Support</a>
           </div>
         </div>
       </div>
