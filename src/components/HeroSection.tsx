@@ -18,11 +18,11 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 px-4">
+    <section ref={sectionRef} className="relative overflow-hidden pt-10 pb-12 md:pt-20 md:pb-24 px-4">
       <div className="max-w-7xl mx-auto relative">
-        {/* Left decorative */}
-        <div className="hero-deco-left absolute left-0 md:left-8 top-32 md:top-40 z-10">
-          <div className="w-44 h-28 md:w-56 md:h-36 border-2 border-awadoc-yellow rounded-lg bg-background relative rotate-[-8deg]">
+        {/* Left decorative - hidden on mobile */}
+        <div className="hero-deco-left hidden md:block absolute left-8 top-40 z-10">
+          <div className="w-56 h-36 border-2 border-awadoc-yellow rounded-lg bg-background relative rotate-[-8deg]">
             <div className="absolute top-3 left-4 right-4 space-y-2">
               <div className="h-2 bg-awadoc-yellow/40 rounded w-3/4" />
               <div className="h-2 bg-awadoc-yellow/30 rounded w-1/2" />
@@ -38,8 +38,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right decorative */}
-        <div className="hero-deco-right absolute right-0 md:right-8 top-28 md:top-36 z-10">
+        {/* Right decorative - hidden on mobile */}
+        <div className="hero-deco-right hidden md:block absolute right-8 top-36 z-10">
           <svg width="120" height="60" viewBox="0 0 120 60" fill="none" className="text-awadoc-blue">
             <path d="M10 30 Q30 5, 50 30 T90 30 T110 20" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
             <path d="M85 15 Q95 5, 105 15" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
@@ -53,21 +53,22 @@ const HeroSection = () => {
         </div>
 
         {/* Main content */}
-        <div className="text-center max-w-4xl mx-auto relative z-20 px-4">
-          <h1 className="hero-title text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-foreground leading-[1.15] mb-6">
-            Instant Market Prices via<br />WhatsApp, Powered by AI.
+        <div className="text-center max-w-4xl mx-auto relative z-20 px-2 sm:px-4">
+          <h1 className="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-foreground leading-[1.15] mb-4 md:mb-6">
+            Instant Market Prices via<br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>WhatsApp, Powered by AI.
           </h1>
-          <p className="hero-subtitle text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="hero-subtitle text-sm sm:text-base md:text-lg text-muted-foreground mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
             Stop buying blind. Get real-time prices from major markets across Nigeria directly on your WhatsApp. Overcome price confusion and overspending. Increase savings, not costs.
           </p>
           <div className="hero-cta">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-5 sm:px-8 sm:py-6 text-sm sm:text-base font-semibold shadow-lg shadow-primary/25 w-full sm:w-auto">
               Talk to Mudu now
             </Button>
           </div>
 
           {/* Avatar group */}
-          <div className="hero-avatars mt-10 flex items-center justify-center gap-3">
+          <div className="hero-avatars mt-8 md:mt-10 flex items-center justify-center gap-3">
             <div className="flex -space-x-3">
               {[
                 "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
@@ -75,17 +76,12 @@ const HeroSection = () => {
                 "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
                 "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
               ].map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt="User"
-                  className="w-10 h-10 rounded-full border-2 border-background object-cover"
-                />
+                <img key={i} src={src} alt="User" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-background object-cover" />
               ))}
             </div>
             <div className="text-left">
-              <p className="text-sm font-semibold text-primary">Helping over</p>
-              <p className="text-sm font-semibold text-primary">1.5billion Africans</p>
+              <p className="text-xs sm:text-sm font-semibold text-primary">Helping over</p>
+              <p className="text-xs sm:text-sm font-semibold text-primary">1.5billion Africans</p>
             </div>
           </div>
         </div>

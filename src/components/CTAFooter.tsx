@@ -38,7 +38,7 @@ const CTAFooter = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-awadoc-teal py-20 md:py-32 px-4 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-awadoc-teal py-14 md:py-32 px-4 overflow-hidden">
       {avatars.map((av, i) => (
         <img
           key={i}
@@ -49,13 +49,13 @@ const CTAFooter = () => {
       ))}
 
       <div className="max-w-3xl mx-auto text-center relative z-10" data-aos="fade-up">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-4 md:mb-6">
           Accessing fair food prices shouldn't be hard. Together, we can make it easy
         </h2>
-        <p className="text-primary-foreground/80 mb-8 text-base md:text-lg leading-relaxed">
+        <p className="text-primary-foreground/80 mb-6 md:mb-8 text-sm sm:text-base md:text-lg leading-relaxed">
           Don't wait for answers—get instant, AI-powered insights and connect with verified traders.
         </p>
-        <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-semibold">
+        <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-6 py-5 sm:px-8 sm:py-6 text-sm sm:text-base font-semibold w-full sm:w-auto">
           Talk to Mudu now
         </Button>
       </div>
