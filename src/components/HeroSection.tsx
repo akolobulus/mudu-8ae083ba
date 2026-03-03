@@ -1,64 +1,76 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, BarChart3 } from "lucide-react";
+import { ShoppingCart, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 px-4">
-      <div className="max-w-7xl mx-auto text-center relative">
-        {/* Decorative elements */}
-        <div className="absolute left-4 md:left-12 top-0 md:top-8">
-          <div className="w-16 h-20 md:w-20 md:h-24 bg-awadoc-yellow/20 rounded-xl flex items-center justify-center rotate-[-12deg]">
-            <ShoppingCart className="w-8 h-8 md:w-10 md:h-10 text-awadoc-yellow" />
+    <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 px-4">
+      <div className="max-w-7xl mx-auto relative">
+        {/* Left decorative - yellow document card */}
+        <div className="absolute left-0 md:left-8 top-32 md:top-40 z-10">
+          <div className="w-44 h-28 md:w-56 md:h-36 border-2 border-awadoc-yellow rounded-lg bg-background relative rotate-[-8deg]">
+            <div className="absolute top-3 left-4 right-4 space-y-2">
+              <div className="h-2 bg-awadoc-yellow/40 rounded w-3/4" />
+              <div className="h-2 bg-awadoc-yellow/30 rounded w-1/2" />
+              <div className="h-2 bg-awadoc-yellow/20 rounded w-2/3" />
+            </div>
+            <div className="absolute -bottom-2 -left-2 w-12 h-8 bg-awadoc-yellow rounded-sm rotate-[5deg]" />
           </div>
-          <div className="mt-4 bg-background shadow-lg rounded-full px-3 py-1.5 text-xs font-medium inline-flex items-center gap-1.5 border border-border">
-            <div className="w-5 h-5 rounded-full bg-awadoc-pink/20 flex items-center justify-center text-[10px]">🛒</div>
-            Buyer
-          </div>
-        </div>
-
-        <div className="absolute right-4 md:right-12 top-4 md:top-12">
-          <div className="w-16 h-20 md:w-20 md:h-24 bg-awadoc-blue/20 rounded-xl flex items-center justify-center rotate-[12deg]">
-            <BarChart3 className="w-8 h-8 md:w-10 md:h-10 text-awadoc-blue" />
-          </div>
-          <div className="mt-4 bg-background shadow-lg rounded-full px-3 py-1.5 text-xs font-medium inline-flex items-center gap-1.5 border border-border">
-            <div className="w-5 h-5 rounded-full bg-awadoc-blue/20 flex items-center justify-center text-[10px]">📊</div>
-            Trader
+          <div className="mt-3 ml-0">
+            <div className="bg-awadoc-yellow text-foreground rounded-md px-3 py-1 text-xs font-semibold inline-flex items-center gap-1 shadow-sm">
+              <span>Buyer</span>
+              <svg width="8" height="8" viewBox="0 0 8 8" className="ml-0.5"><polygon points="4,8 0,0 8,0" fill="currentColor" /></svg>
+            </div>
           </div>
         </div>
 
-        {/* Main content */}
-        <div className="max-w-3xl mx-auto px-8 md:px-0">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-foreground leading-tight mb-6">
-            Instant Market Prices via WhatsApp, Powered by AI.
+        {/* Right decorative - blue wave squiggle */}
+        <div className="absolute right-0 md:right-8 top-28 md:top-36 z-10">
+          <svg width="120" height="60" viewBox="0 0 120 60" fill="none" className="text-awadoc-blue">
+            <path d="M10 30 Q30 5, 50 30 T90 30 T110 20" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
+            <path d="M85 15 Q95 5, 105 15" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
+          </svg>
+          <div className="mt-1 flex justify-end">
+            <div className="bg-awadoc-blue text-primary-foreground rounded-md px-3 py-1 text-xs font-semibold inline-flex items-center gap-1 shadow-sm">
+              <span>Trader</span>
+              <svg width="8" height="8" viewBox="0 0 8 8" className="ml-0.5"><polygon points="4,8 0,0 8,0" fill="currentColor" /></svg>
+            </div>
+          </div>
+        </div>
+
+        {/* Main content - centered */}
+        <div className="text-center max-w-4xl mx-auto relative z-20 px-4">
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold font-serif text-foreground leading-[1.15] mb-6">
+            Instant Market Prices via<br />WhatsApp, Powered by AI.
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Stop buying blind. Get real-time prices from major markets across Nigeria directly on your WhatsApp.
+          <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+            Stop buying blind. Get real-time prices from major markets across Nigeria directly on your WhatsApp. Overcome price confusion and overspending. Increase savings, not costs.
           </p>
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25">
             Talk to Mudu now
           </Button>
-        </div>
 
-        {/* Avatar group */}
-        <div className="mt-12 flex items-center justify-center gap-3">
-          <div className="flex -space-x-3">
-            {[
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
-              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
-              "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
-              "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
-            ].map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt="User"
-                className="w-10 h-10 rounded-full border-2 border-background object-cover"
-              />
-            ))}
+          {/* Avatar group */}
+          <div className="mt-10 flex items-center justify-center gap-3">
+            <div className="flex -space-x-3">
+              {[
+                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
+                "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+                "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+              ].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="User"
+                  className="w-10 h-10 rounded-full border-2 border-background object-cover"
+                />
+              ))}
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-primary">Helping over</p>
+              <p className="text-sm font-semibold text-primary">1.5billion Africans</p>
+            </div>
           </div>
-          <p className="text-sm text-muted-foreground">
-            Helping <span className="font-semibold text-foreground">1.5 billion</span> Africans buy smarter
-          </p>
         </div>
       </div>
     </section>
