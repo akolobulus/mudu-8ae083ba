@@ -28,24 +28,24 @@ const FAQ = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-20 pb-12 text-center max-w-3xl mx-auto px-4" data-aos="fade-up">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+      <section className="pt-12 sm:pt-20 pb-8 sm:pb-12 text-center max-w-3xl mx-auto px-4" data-aos="fade-up">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
           Frequently Asked Questions
         </h1>
-        <p className="text-muted-foreground text-lg leading-relaxed">
+        <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed">
           Got questions? We've got answers! Explore our FAQs to learn more about how{" "}
           <span className="font-semibold text-foreground">Mudu</span> works and how it can help you master the market.
         </p>
       </section>
 
-      <section className="max-w-3xl mx-auto px-4 pb-24" data-aos="fade-up" data-aos-delay="100">
+      <section className="max-w-3xl mx-auto px-4 pb-16 sm:pb-24" data-aos="fade-up" data-aos-delay="100">
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`item-${i}`} className="border-b border-border">
-              <AccordionTrigger className="text-left text-base md:text-lg font-semibold py-6 hover:no-underline">
+              <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg font-semibold py-4 sm:py-6 hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+              <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed pb-4 sm:pb-6">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

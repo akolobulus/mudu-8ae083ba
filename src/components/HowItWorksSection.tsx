@@ -34,18 +34,18 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-16 md:py-24 px-4">
+    <section className="py-12 md:py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-6" data-aos="fade-up">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 md:mb-12 gap-4 md:gap-6" data-aos="fade-up">
           <div className="max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
               How Does It Work?
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
               Mudu is designed for the streets. Whether you speak Yoruba, Hausa, Igbo, or Pidgin, our AI understands your market needs instantly.
             </p>
           </div>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 self-start md:self-auto">
+          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 self-start md:self-auto w-full sm:w-auto">
             Talk to Mudu now
           </Button>
         </div>
