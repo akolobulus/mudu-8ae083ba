@@ -1,18 +1,23 @@
 import { Button } from "@/components/ui/button";
+import ctaAvatar1 from "@/assets/cta-avatar-1.jpg";
+import ctaAvatar2 from "@/assets/cta-avatar-2.jpg";
+import ctaAvatar3 from "@/assets/cta-avatar-3.jpg";
+import ctaAvatar4 from "@/assets/cta-avatar-4.jpg";
+import ctaAvatar5 from "@/assets/cta-avatar-5.jpg";
+import ctaAvatar6 from "@/assets/cta-avatar-6.jpg";
 
 const avatars = [
-  { src: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&h=100&fit=crop&crop=face", pos: "top-8 left-[10%]" },
-  { src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face", pos: "top-12 right-[15%]" },
-  { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face", pos: "bottom-16 left-[20%]" },
-  { src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face", pos: "top-20 left-[30%]" },
-  { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face", pos: "bottom-20 right-[25%]" },
-  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face", pos: "top-16 right-[35%]" },
+  { src: ctaAvatar1, pos: "top-8 left-[10%]" },
+  { src: ctaAvatar2, pos: "top-12 right-[15%]" },
+  { src: ctaAvatar3, pos: "bottom-16 left-[20%]" },
+  { src: ctaAvatar4, pos: "top-20 left-[30%]" },
+  { src: ctaAvatar5, pos: "bottom-20 right-[25%]" },
+  { src: ctaAvatar6, pos: "top-16 right-[35%]" },
 ];
 
 const CTAFooter = () => {
   return (
     <section className="relative bg-awadoc-teal py-20 md:py-32 px-4 overflow-hidden">
-      {/* Floating avatars */}
       {avatars.map((av, i) => (
         <img
           key={i}
