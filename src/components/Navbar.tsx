@@ -19,7 +19,7 @@ const Navbar = () => {
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About us</a>
+            <a href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About us</a>
             <a href="#faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
             <a href="#blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Blog</a>
             <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Contact us</a>
@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="md:hidden pb-4 space-y-3">
-            <a href="#about" className="block text-sm font-medium text-muted-foreground hover:text-foreground">About us</a>
+            <a href="/about" className="block text-sm font-medium text-muted-foreground hover:text-foreground">About us</a>
             <a href="#faq" className="block text-sm font-medium text-muted-foreground hover:text-foreground">FAQ</a>
             <a href="#blog" className="block text-sm font-medium text-muted-foreground hover:text-foreground">Blog</a>
             <a href="#contact" className="block text-sm font-medium text-muted-foreground hover:text-foreground">Contact us</a>
