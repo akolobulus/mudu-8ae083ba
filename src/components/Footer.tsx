@@ -40,9 +40,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About us</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How it works</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
+              <li><a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Home</a></li>
+              <li><a href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About us</a></li>
+              <li><a href="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
+              <li><a href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</a></li>
             </ul>
           </div>
 
@@ -60,7 +61,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Reach us</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact us</a></li>
+              <li><a href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact us</a></li>
               <li>
                 <p className="text-sm font-semibold text-foreground">E-mail:</p>
                 <a href="mailto:officialarikpa@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">officialarikpa@gmail.com</a>
