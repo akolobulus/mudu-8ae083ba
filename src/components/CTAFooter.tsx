@@ -22,14 +22,16 @@ const CTAFooter = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".cta-avatar", {
-        opacity: 0,
-        scale: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        delay: 0.3,
-        ease: "back.out(1.7)",
-        scrollTrigger: undefined,
+      // Endless bounce animation for each avatar with staggered timing
+      document.querySelectorAll(".cta-avatar").forEach((el, i) => {
+        gsap.to(el, {
+          y: -18,
+          duration: 1.2 + i * 0.15,
+          ease: "sine.inOut",
+          repeat: -1,
+          yoyo: true,
+          delay: i * 0.2,
+        });
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -42,7 +44,7 @@ const CTAFooter = () => {
           key={i}
           src={av.src}
           alt="User"
-          className={`cta-avatar absolute ${av.pos} w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-primary-foreground/30 opacity-40 hidden md:block`}
+          className={`cta-avatar absolute ${av.pos} w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-primary-foreground/30 opacity-60 hidden md:block`}
         />
       ))}
 
