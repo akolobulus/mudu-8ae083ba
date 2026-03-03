@@ -63,11 +63,11 @@ const Footer = () => {
               <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact us</a></li>
               <li>
                 <p className="text-sm font-semibold text-foreground">E-mail:</p>
-                <a href="mailto:help@mudu.ng" className="text-sm text-muted-foreground hover:text-foreground transition-colors">help@mudu.ng</a>
+                <a href="mailto:officialarikpa@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">officialarikpa@gmail.com</a>
               </li>
               <li>
                 <p className="text-sm font-semibold text-foreground">Address:</p>
-                <p className="text-sm text-muted-foreground">14b, Immam Dauda Street, Surulere, Lagos - Nigeria.</p>
+                <p className="text-sm text-muted-foreground">No 6, Freetown Road, Apapa, Lagos - Nigeria.</p>
               </li>
               <li>
                 <p className="text-sm text-muted-foreground">8 The Green. Ste A. Dover, Delaware 19901 - USA.</p>
