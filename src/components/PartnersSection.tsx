@@ -50,31 +50,31 @@ const PartnersSection = () => {
   return (
     <section className="py-16 md:py-24 px-4 bg-muted/30">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif text-foreground text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-10" data-aos="fade-up">
           Who We Work With
         </h2>
 
-        {/* Partner types */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-16">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-16" data-aos="fade-up" data-aos-delay="100">
           {partnerTypes.map((type, index) => (
             <div key={index} className="flex items-center gap-2">
               <div className="w-2.5 h-2.5 rounded-full bg-primary" />
-              <span className="text-sm font-medium text-foreground">{type.label}</span>
+              <span className="text-sm font-semibold text-foreground">{type.label}</span>
             </div>
           ))}
         </div>
 
-        {/* Benefit cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}
               className={`bg-card border border-border rounded-2xl p-6 border-t-4 ${benefit.borderColor}`}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
             >
               <div className={`w-12 h-12 ${benefit.iconBg} rounded-xl flex items-center justify-center mb-5`}>
                 <benefit.icon className={`w-6 h-6 ${benefit.iconColor}`} />
               </div>
-              <h3 className="text-lg font-semibold font-sans text-foreground mb-4">{benefit.title}</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4">{benefit.title}</h3>
               <ul className="space-y-3">
                 {benefit.points.map((point, pi) => (
                   <li key={pi} className="flex items-start gap-2.5">

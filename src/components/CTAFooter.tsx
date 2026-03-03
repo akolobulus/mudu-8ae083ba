@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import ctaAvatar1 from "@/assets/cta-avatar-1.jpg";
 import ctaAvatar2 from "@/assets/cta-avatar-2.jpg";
 import ctaAvatar3 from "@/assets/cta-avatar-3.jpg";
@@ -16,19 +18,36 @@ const avatars = [
 ];
 
 const CTAFooter = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".cta-avatar", {
+        opacity: 0,
+        scale: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        delay: 0.3,
+        ease: "back.out(1.7)",
+        scrollTrigger: undefined,
+      });
+    }, sectionRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="relative bg-awadoc-teal py-20 md:py-32 px-4 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-awadoc-teal py-20 md:py-32 px-4 overflow-hidden">
       {avatars.map((av, i) => (
         <img
           key={i}
           src={av.src}
           alt="User"
-          className={`absolute ${av.pos} w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-primary-foreground/30 opacity-40 hidden md:block`}
+          className={`cta-avatar absolute ${av.pos} w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-primary-foreground/30 opacity-40 hidden md:block`}
         />
       ))}
 
-      <div className="max-w-3xl mx-auto text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-primary-foreground leading-tight mb-6">
+      <div className="max-w-3xl mx-auto text-center relative z-10" data-aos="fade-up">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-6">
           Accessing fair food prices shouldn't be hard. Together, we can make it easy
         </h2>
         <p className="text-primary-foreground/80 mb-8 text-base md:text-lg leading-relaxed">

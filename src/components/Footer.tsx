@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <MessageCircle className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold font-sans text-foreground">Mudu</span>
+              <span className="text-xl text-foreground" style={{ fontWeight: 800 }}>Mudu</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               Smart shopping for u — simplifying access to real-time market prices using AI on WhatsApp.

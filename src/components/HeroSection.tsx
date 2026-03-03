@@ -1,12 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, TrendingUp } from "lucide-react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const HeroSection = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".hero-title", { opacity: 0, y: 40, duration: 1, ease: "power3.out" });
+      gsap.from(".hero-subtitle", { opacity: 0, y: 30, duration: 0.8, delay: 0.3, ease: "power3.out" });
+      gsap.from(".hero-cta", { opacity: 0, scale: 0.9, duration: 0.6, delay: 0.6, ease: "back.out(1.7)" });
+      gsap.from(".hero-avatars", { opacity: 0, y: 20, duration: 0.6, delay: 0.8, ease: "power2.out" });
+      gsap.from(".hero-deco-left", { opacity: 0, x: -60, rotation: -15, duration: 1, delay: 0.4, ease: "power2.out" });
+      gsap.from(".hero-deco-right", { opacity: 0, x: 60, duration: 1, delay: 0.5, ease: "power2.out" });
+    }, sectionRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 px-4">
+    <section ref={sectionRef} className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 px-4">
       <div className="max-w-7xl mx-auto relative">
-        {/* Left decorative - yellow document card */}
-        <div className="absolute left-0 md:left-8 top-32 md:top-40 z-10">
+        {/* Left decorative */}
+        <div className="hero-deco-left absolute left-0 md:left-8 top-32 md:top-40 z-10">
           <div className="w-44 h-28 md:w-56 md:h-36 border-2 border-awadoc-yellow rounded-lg bg-background relative rotate-[-8deg]">
             <div className="absolute top-3 left-4 right-4 space-y-2">
               <div className="h-2 bg-awadoc-yellow/40 rounded w-3/4" />
@@ -23,8 +38,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right decorative - blue wave squiggle */}
-        <div className="absolute right-0 md:right-8 top-28 md:top-36 z-10">
+        {/* Right decorative */}
+        <div className="hero-deco-right absolute right-0 md:right-8 top-28 md:top-36 z-10">
           <svg width="120" height="60" viewBox="0 0 120 60" fill="none" className="text-awadoc-blue">
             <path d="M10 30 Q30 5, 50 30 T90 30 T110 20" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
             <path d="M85 15 Q95 5, 105 15" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
@@ -37,20 +52,22 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Main content - centered */}
+        {/* Main content */}
         <div className="text-center max-w-4xl mx-auto relative z-20 px-4">
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold font-serif text-foreground leading-[1.15] mb-6">
+          <h1 className="hero-title text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-foreground leading-[1.15] mb-6">
             Instant Market Prices via<br />WhatsApp, Powered by AI.
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="hero-subtitle text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
             Stop buying blind. Get real-time prices from major markets across Nigeria directly on your WhatsApp. Overcome price confusion and overspending. Increase savings, not costs.
           </p>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25">
-            Talk to Mudu now
-          </Button>
+          <div className="hero-cta">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25">
+              Talk to Mudu now
+            </Button>
+          </div>
 
           {/* Avatar group */}
-          <div className="mt-10 flex items-center justify-center gap-3">
+          <div className="hero-avatars mt-10 flex items-center justify-center gap-3">
             <div className="flex -space-x-3">
               {[
                 "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
