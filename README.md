@@ -1,5 +1,5 @@
 
-//this is m
+//this is
 # Welcome to your Lovable project
 
 ## Project info
