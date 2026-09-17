@@ -1,5 +1,5 @@
 
-//this is my today
+//this is my toda
 # Welcome to your Lovable project
 
 ## Project info
