@@ -1,5 +1,5 @@
 
-//this is my todays du
+//this is my todays d
 # Welcome to your Lovable project
 
 ## Project info
