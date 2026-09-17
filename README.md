@@ -1,5 +1,5 @@
 
-//this is my todays dumm
+//this is my todays dum
 # Welcome to your Lovable project
 
 ## Project info
