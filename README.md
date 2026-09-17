@@ -1,5 +1,5 @@
 
-//this is my todays dummy vocccm c
+//this is my todays dummy vocccm
 # Welcome to your Lovable project
 
 ## Project info
