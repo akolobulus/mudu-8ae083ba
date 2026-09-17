@@ -1,5 +1,5 @@
 
-//this is my t
+//this is my
 # Welcome to your Lovable project
 
 ## Project info
