@@ -1,5 +1,5 @@
 
-# Welcome to your Lovable
+# Welcome to your Lovabl
 
 ## Project info
 
