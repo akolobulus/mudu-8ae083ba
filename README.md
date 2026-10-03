@@ -1,5 +1,5 @@
 
-# Welcome to your Lovab
+# Welcome to your Lova
 
 ## Project info
 
