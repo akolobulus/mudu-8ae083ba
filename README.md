@@ -1,5 +1,5 @@
 
-# Welcome to yur
+# Welcome to yu
 ## Project info
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
