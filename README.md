@@ -1,4 +1,4 @@
-*URL**: https://lovable.dev/projects/REPLA
+*URL**: https://lovable.dev/projects/REPL
 ## Project info
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
